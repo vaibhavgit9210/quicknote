@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(npx vite build:*)",
+      "Bash(npm run dev:*)",
+      "Bash(curl:*)",
+      "Bash(gh auth:*)",
+      "Bash(brew install:*)",
+      "Bash(git -C /Users/vaibhavkumar/Documents/me2/quicknote init:*)",
+      "Bash(npm run build:*)",
+      "Bash(git remote:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

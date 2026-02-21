@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickNote</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>QuickNote</h1>
+      <div class="header-actions">
+        <span class="room-badge" id="room-badge"></span>
+        <button id="copy-link-btn" title="Copy link to clipboard">Copy Link</button>
+      </div>
+    </header>
+
+    <main>
+      <textarea
+        id="text-area"
+        placeholder="Paste or type anything..."
+        autofocus
+      ></textarea>
+
+      <div class="drop-zone" id="drop-zone">
+        <p>Drop or paste image here</p>
+        <p class="drop-hint">(or click to select file)</p>
+        <input type="file" id="file-input" accept="image/*" hidden />
+      </div>
+
+      <div class="image-preview" id="image-preview"></div>
+    </main>
+
+    <footer>
+      <span id="expiry-timer"></span>
+      <div class="footer-actions">
+        <button id="new-room-btn">New Room</button>
+        <button id="clear-btn">Clear</button>
+      </div>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
